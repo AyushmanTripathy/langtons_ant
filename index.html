@@ -8,6 +8,20 @@
     <title>Document</title>
   </head>
   <body>
+    <section>
+      <section>
+        <input
+          type="range"
+          onchange="start(this.value)"
+          max="30"
+          min="1"
+          class="slider"
+          name="frameRate"
+          value="1"
+        />
+      </section>
+      <canvas height="800" width="800"></canvas>
+    </section>
     <script src="./src/scripts/script.js"></script>
   </body>
 </html>

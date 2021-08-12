@@ -19,3 +19,46 @@ body {
   width: 100vw;
   color: $sec;
 }
+
+section {
+  @include centered();
+}
+
+canvas {
+  border: 1px $sec solid;
+}
+
+//slider
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 1px;
+  background: $bg;
+  outline: none;
+  border: 1px solid $sec;
+  border-radius: 8px;
+
+  transform: rotate(90deg);
+}
+
+/* for chrome/safari */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 10px;
+  background: $bg;
+  cursor: pointer;
+  border: 1px solid $sec;
+  border-radius: 4px;
+}
+
+/* for firefox */
+.slider::-moz-range-thumb {
+  height: 5px;
+  width: 5px;
+  background: $bg;
+  cursor: pointer;
+  border: 5px solid $sec;
+  border-radius: 4px;
+}
