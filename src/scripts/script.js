@@ -13,8 +13,6 @@ const dir = [
   { x: 0, y: -1 },
 ];
 
-alert("Change the Slider to Start Simulation");
-
 function start(count) {
   stop();
   ctx.fillStyle = "#202124";
